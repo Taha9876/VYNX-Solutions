@@ -164,11 +164,11 @@ export function HeroSection() {
         ))}
       </div>
       
-      <div className="relative z-10 w-full max-w-[1400px] mx-auto px-6 lg:px-12 py-32 lg:py-40">
+      <div className="relative z-10 w-full max-w-[1400px] mx-auto px-6 lg:px-12 pt-28 pb-8 md:py-32 lg:py-40">
         <div className="lg:max-w-[55%]">
         {/* Eyebrow */}
-        <div 
-          className={`mb-8 transition-all duration-700 ${
+        <div
+          className={`mb-4 md:mb-8 transition-all duration-700 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
@@ -179,7 +179,7 @@ export function HeroSection() {
         </div>
         
         {/* Main headline */}
-        <div className="mb-12">
+        <div className="mb-0 md:mb-12">
           <h1 
             className={`text-left text-[clamp(1.75rem,8vw,8rem)] font-display leading-[0.95] tracking-tight text-white transition-all duration-1000 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
@@ -199,7 +199,7 @@ export function HeroSection() {
       
       {/* Stats */}
       <div
-        className={`relative z-10 w-full max-w-[1400px] mx-auto px-6 lg:px-12 pb-12 md:absolute md:bottom-20 lg:bottom-24 md:left-0 md:right-0 md:pb-0 transition-all duration-700 delay-500 ${
+        className={`relative z-10 w-full max-w-[1400px] mx-auto px-6 lg:px-12 mt-10 md:mt-0 pb-10 md:absolute md:bottom-20 lg:bottom-24 md:left-0 md:right-0 md:pb-0 transition-all duration-700 delay-500 ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}
       >
