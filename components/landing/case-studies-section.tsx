@@ -67,7 +67,7 @@ export function CaseStudiesSection() {
   const active = caseStudies[activeStudy];
 
   return (
-    <section ref={sectionRef} id="case-studies" className="relative py-32 lg:py-40 bg-[oklch(0.09_0.01_260)] text-white overflow-hidden">
+    <section ref={sectionRef} id="case-studies" className="relative py-16 md:py-32 lg:py-40 bg-[oklch(0.09_0.01_260)] text-white overflow-hidden">
       <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-white/[0.015] blur-[120px] pointer-events-none" />
 
       <div className="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-12">

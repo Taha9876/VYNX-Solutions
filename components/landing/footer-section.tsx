@@ -105,7 +105,7 @@ export function FooterSection() {
       {/* Footer content — black background, white text */}
       <div className="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-12">
         {/* Main Footer */}
-        <div className="py-16 lg:py-20">
+        <div className="py-10 md:py-16 lg:py-20">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8 md:gap-6 lg:gap-8">
             {/* Brand Column */}
             <div className="col-span-1 sm:col-span-2">

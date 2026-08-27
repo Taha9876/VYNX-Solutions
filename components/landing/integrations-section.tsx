@@ -46,7 +46,7 @@ export function IntegrationsSection() {
   }, []);
 
   return (
-    <section id="integrations" ref={sectionRef} className="relative overflow-hidden py-32 lg:py-40">
+    <section id="integrations" ref={sectionRef} className="relative overflow-hidden py-16 md:py-32 lg:py-40">
       <style>{`
         @keyframes marqueeLeft {
           from { transform: translateX(0); }

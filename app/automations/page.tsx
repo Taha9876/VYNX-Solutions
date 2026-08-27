@@ -51,7 +51,7 @@ export default function AutomationsPage() {
       <Navigation />
 
       {/* Hero */}
-      <section className="relative pt-40 pb-24 lg:pt-52 lg:pb-32 px-6 lg:px-12 max-w-[1400px] mx-auto">
+      <section className="relative pt-28 pb-14 md:pt-40 md:pb-24 lg:pt-48 lg:pb-32 px-6 lg:px-12 max-w-[1400px] mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-8">
@@ -114,7 +114,7 @@ export default function AutomationsPage() {
       </section>
 
       {/* Automation types */}
-      <section className="px-6 lg:px-12 py-24 lg:py-32 max-w-[1400px] mx-auto">
+      <section className="px-6 lg:px-12 py-14 md:py-24 lg:py-32 max-w-[1400px] mx-auto">
         <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-16">
           <span className="w-8 h-px bg-foreground/30" />
           What we automate
@@ -146,7 +146,7 @@ export default function AutomationsPage() {
       </section>
 
       {/* Tools */}
-      <section className="border-t border-foreground/10 px-6 lg:px-12 py-24 lg:py-32 max-w-[1400px] mx-auto">
+      <section className="border-t border-foreground/10 px-6 lg:px-12 py-14 md:py-24 lg:py-32 max-w-[1400px] mx-auto">
         <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-12">
           <span className="w-8 h-px bg-foreground/30" />
           Tools we work with
@@ -167,7 +167,7 @@ export default function AutomationsPage() {
       </section>
 
       {/* Process */}
-      <section className="border-t border-foreground/10 px-6 lg:px-12 py-24 lg:py-32 max-w-[1400px] mx-auto">
+      <section className="border-t border-foreground/10 px-6 lg:px-12 py-14 md:py-24 lg:py-32 max-w-[1400px] mx-auto">
         <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-16">
           <span className="w-8 h-px bg-foreground/30" />
           How it works
@@ -189,7 +189,7 @@ export default function AutomationsPage() {
       </section>
 
       {/* CTA */}
-      <section className="border-t border-foreground/10 px-6 lg:px-12 py-24 lg:py-32 max-w-[1400px] mx-auto text-center">
+      <section className="border-t border-foreground/10 px-6 lg:px-12 py-14 md:py-24 lg:py-32 max-w-[1400px] mx-auto text-center">
         <h2 className="text-5xl lg:text-7xl font-display mb-6">Stop doing it manually.</h2>
         <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
           Book a free automation audit. We&apos;ll identify the top 5 tasks we can automate in your business and give you an exact quote.

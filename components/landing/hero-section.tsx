@@ -120,7 +120,7 @@ export function HeroSection() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex flex-col justify-center items-start bg-black overflow-x-hidden">
+    <section className="relative min-h-screen flex flex-col justify-start md:justify-center items-start bg-black overflow-x-hidden">
       {/* Background video */}
       <div className="absolute inset-0 z-0">
         <video
@@ -164,7 +164,7 @@ export function HeroSection() {
         ))}
       </div>
       
-      <div className="relative z-10 w-full max-w-[1400px] mx-auto px-6 lg:px-12 pt-28 pb-8 md:py-32 lg:py-40">
+      <div className="relative z-10 w-full max-w-[1400px] mx-auto px-6 lg:px-12 pt-24 pb-6 md:py-24 lg:py-28">
         <div className="lg:max-w-[55%]">
         {/* Eyebrow */}
         <div

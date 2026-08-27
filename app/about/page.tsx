@@ -56,7 +56,7 @@ export default function AboutPage() {
       <Navigation />
 
       {/* Hero */}
-      <section className="relative pt-40 pb-24 lg:pt-52 lg:pb-32 px-6 lg:px-12 max-w-[1400px] mx-auto">
+      <section className="relative pt-28 pb-14 md:pt-40 md:pb-24 lg:pt-48 lg:pb-32 px-6 lg:px-12 max-w-[1400px] mx-auto">
         <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-8">
           <span className="w-8 h-px bg-foreground/30" />
           Who we are
@@ -79,7 +79,7 @@ export default function AboutPage() {
       </section>
 
       {/* Mission statement */}
-      <section className="border-t border-foreground/10 px-6 lg:px-12 py-24 lg:py-32 max-w-[1400px] mx-auto grid lg:grid-cols-2 gap-16">
+      <section className="border-t border-foreground/10 px-6 lg:px-12 py-14 md:py-24 lg:py-32 max-w-[1400px] mx-auto grid lg:grid-cols-2 gap-16">
         <div>
           <h2 className="text-4xl lg:text-5xl font-display leading-tight mb-8">
             We exist to give ambitious businesses a genuine digital advantage.
@@ -115,7 +115,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="px-6 lg:px-12 py-24 lg:py-32 max-w-[1400px] mx-auto">
+      <section className="px-6 lg:px-12 py-14 md:py-24 lg:py-32 max-w-[1400px] mx-auto">
         <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-16">
           <span className="w-8 h-px bg-foreground/30" />
           What we stand for
@@ -131,7 +131,7 @@ export default function AboutPage() {
       </section>
 
       {/* Team */}
-      <section className="border-t border-foreground/10 px-6 lg:px-12 py-24 lg:py-32 max-w-[1400px] mx-auto">
+      <section className="border-t border-foreground/10 px-6 lg:px-12 py-14 md:py-24 lg:py-32 max-w-[1400px] mx-auto">
         <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-16">
           <span className="w-8 h-px bg-foreground/30" />
           The team
@@ -151,7 +151,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="border-t border-foreground/10 px-6 lg:px-12 py-24 lg:py-32 max-w-[1400px] mx-auto text-center">
+      <section className="border-t border-foreground/10 px-6 lg:px-12 py-14 md:py-24 lg:py-32 max-w-[1400px] mx-auto text-center">
         <h2 className="text-5xl lg:text-7xl font-display mb-6">Want to work together?</h2>
         <p className="text-xl text-muted-foreground mb-10">We take on a limited number of projects each month. Let&apos;s talk.</p>
         <a

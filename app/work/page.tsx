@@ -199,7 +199,7 @@ export default function WorkPage() {
       <Navigation />
 
       {/* Hero */}
-      <section className="relative pt-40 pb-24 lg:pt-52 lg:pb-32 px-6 lg:px-12 max-w-[1400px] mx-auto">
+      <section className="relative pt-28 pb-14 md:pt-40 md:pb-24 lg:pt-48 lg:pb-32 px-6 lg:px-12 max-w-[1400px] mx-auto">
         <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-8">
           <span className="w-8 h-px bg-foreground/30" />
           Portfolio
@@ -237,7 +237,7 @@ export default function WorkPage() {
       </section>
 
       {/* Case studies */}
-      <section className="px-6 lg:px-12 max-w-[1400px] mx-auto py-24 lg:py-32">
+      <section className="px-6 lg:px-12 max-w-[1400px] mx-auto py-14 md:py-24 lg:py-32">
         <div className="space-y-32 lg:space-y-40" data-animate="stagger">
           {caseStudies.map((study) => (
             <article key={study.number} className="grid lg:grid-cols-12 gap-8 lg:gap-16">
@@ -335,7 +335,7 @@ export default function WorkPage() {
       </section>
 
       {/* CTA */}
-      <section className="border-t border-foreground/10 px-6 lg:px-12 py-24 lg:py-32 max-w-[1400px] mx-auto text-center">
+      <section className="border-t border-foreground/10 px-6 lg:px-12 py-14 md:py-24 lg:py-32 max-w-[1400px] mx-auto text-center">
         <h2 className="text-5xl lg:text-7xl font-display mb-6">Want results like these?</h2>
         <p className="text-xl text-muted-foreground mb-10">Tell us about your project and let&apos;s build something great together.</p>
         <a

@@ -44,7 +44,7 @@ export default function ContactPage() {
     <main className="relative min-h-screen overflow-x-hidden bg-background text-foreground">
       <Navigation />
 
-      <section className="pt-40 pb-24 lg:pt-52 lg:pb-32 px-6 lg:px-12 max-w-[1400px] mx-auto">
+      <section className="pt-28 pb-14 md:pt-40 md:pb-24 lg:pt-48 lg:pb-32 px-6 lg:px-12 max-w-[1400px] mx-auto">
         <div className="grid lg:grid-cols-12 gap-16 lg:gap-24">
           {/* Left */}
           <div className="lg:col-span-5">

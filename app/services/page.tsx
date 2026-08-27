@@ -95,7 +95,7 @@ export default function ServicesPage() {
       <Navigation />
 
       {/* Hero */}
-      <section className="relative pt-40 pb-24 lg:pt-52 lg:pb-32 px-6 lg:px-12 max-w-[1400px] mx-auto">
+      <section className="relative pt-28 pb-14 md:pt-40 md:pb-24 lg:pt-48 lg:pb-32 px-6 lg:px-12 max-w-[1400px] mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-8">
@@ -126,7 +126,7 @@ export default function ServicesPage() {
       <section className="px-6 lg:px-12 max-w-[1400px] mx-auto pb-32 lg:pb-40">
         <div className="divide-y divide-foreground/10" data-animate="stagger">
           {services.map((service) => (
-            <div key={service.number} className="py-16 lg:py-24 grid lg:grid-cols-12 gap-8 lg:gap-16">
+            <div key={service.number} className="py-10 md:py-16 lg:py-24 grid lg:grid-cols-12 gap-8 lg:gap-16">
               {/* Left: number + meta */}
               <div className="lg:col-span-3">
                 <span className="text-5xl font-display text-muted-foreground/30 block mb-6">{service.number}</span>
@@ -169,7 +169,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="border-t border-foreground/10 px-6 lg:px-12 py-24 lg:py-32 max-w-[1400px] mx-auto text-center">
+      <section className="border-t border-foreground/10 px-6 lg:px-12 py-14 md:py-24 lg:py-32 max-w-[1400px] mx-auto text-center">
         <h2 className="text-5xl lg:text-7xl font-display mb-6">Not sure what you need?</h2>
         <p className="text-xl text-muted-foreground mb-10">Book a free 30-minute call. We&apos;ll figure it out together.</p>
         <a
