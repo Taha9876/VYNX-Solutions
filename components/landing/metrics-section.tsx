@@ -18,11 +18,11 @@ const metrics = [
     sublabel: "clients come back for more",
   },
   {
-    value: 4800000,
-    suffix: "",
-    prefix: "$",
-    label: "Revenue generated",
-    sublabel: "for our clients combined",
+    value: 12000,
+    suffix: "+",
+    prefix: "",
+    label: "Hours automated",
+    sublabel: "of manual work saved for clients",
   },
 ];
 
