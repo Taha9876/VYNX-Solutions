@@ -199,7 +199,7 @@ export function HeroSection() {
       
       {/* Stats */}
       <div
-        className={`relative z-10 w-full max-w-[1400px] mx-auto px-6 lg:px-12 pb-12 md:absolute md:bottom-12 md:left-0 md:right-0 md:pb-0 transition-all duration-700 delay-500 ${
+        className={`relative z-10 w-full max-w-[1400px] mx-auto px-6 lg:px-12 pb-12 md:absolute md:bottom-20 lg:bottom-24 md:left-0 md:right-0 md:pb-0 transition-all duration-700 delay-500 ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}
       >
