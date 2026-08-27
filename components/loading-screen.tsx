@@ -28,14 +28,14 @@ export function LoadingScreen() {
 
       const tl = gsap.timeline();
 
-      // Letters + progress run in parallel from t=0; exit fires after progress ends (~1.1s)
-      // Total screen time: ~2.0s
-      tl.to(letters, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out", stagger: 0.04 })
-        .to(taglineRef.current, { opacity: 1, y: 0, duration: 0.35, ease: "power2.out" }, 0.22)
-        .to(progressRef.current, { scaleX: 1, duration: 1.1, ease: "power2.inOut" }, 0)
+      // Letters + progress run in parallel from t=0; exit fires after progress ends (~0.6s)
+      // Total screen time: ~1.1s
+      tl.to(letters, { y: 0, opacity: 1, duration: 0.35, ease: "power3.out", stagger: 0.03 })
+        .to(taglineRef.current, { opacity: 1, y: 0, duration: 0.25, ease: "power2.out" }, 0.15)
+        .to(progressRef.current, { scaleX: 1, duration: 0.6, ease: "power2.inOut" }, 0)
         .to(overlayRef.current, {
           yPercent: -100,
-          duration: 0.9,
+          duration: 0.55,
           ease: "power3.inOut",
           onComplete() {
             sessionStorage.setItem("vynx_loaded", "1");

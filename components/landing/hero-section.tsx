@@ -120,7 +120,7 @@ export function HeroSection() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex flex-col justify-center items-start overflow-hidden bg-black">
+    <section className="relative min-h-screen flex flex-col justify-center items-start bg-black overflow-x-hidden">
       {/* Background video */}
       <div className="absolute inset-0 z-0">
         <video
@@ -181,14 +181,14 @@ export function HeroSection() {
         {/* Main headline */}
         <div className="mb-12">
           <h1 
-            className={`text-left text-[clamp(2rem,6vw,7rem)] font-display leading-[0.92] tracking-tight text-white transition-all duration-1000 ${
+            className={`text-left text-[clamp(1.75rem,8vw,8rem)] font-display leading-[0.95] tracking-tight text-white transition-all duration-1000 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
             <span className="block">Digital solutions,</span>
             <span className="block">
               websites that{" "}
-              <span className="relative inline-block">
+              <span className="relative inline-block py-2 -my-2 pr-3 -mr-3">
                 <BlurWord word={words[wordIndex]} trigger={wordIndex} />
               </span>
             </span>
@@ -197,13 +197,13 @@ export function HeroSection() {
         </div>
       </div>
       
-      {/* Stats — 3 metrics static, no auto-scroll */}
-      <div 
-        className={`absolute bottom-12 left-0 right-0 px-6 lg:px-12 transition-all duration-700 delay-500 ${
+      {/* Stats */}
+      <div
+        className={`relative z-10 w-full max-w-[1400px] mx-auto px-6 lg:px-12 pb-12 md:absolute md:bottom-12 md:left-0 md:right-0 md:pb-0 transition-all duration-700 delay-500 ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}
       >
-        <div className="max-w-[1400px] mx-auto flex flex-wrap items-start gap-x-10 gap-y-4 lg:gap-x-20">
+        <div className="flex flex-wrap items-start gap-x-10 gap-y-4 lg:gap-x-20">
           {[
             { value: "120+", count: "120", suffix: "+", label: "projects delivered" },
             { value: "98%",  count: "98",  suffix: "%", label: "client retention rate" },

@@ -1,6 +1,34 @@
 "use client";
 
+import { ArrowUpRight } from "lucide-react";
 import { useEffect, useRef } from "react";
+
+const footerLinks = {
+  Services: [
+    { name: "Custom Websites",   href: "/services"          },
+    { name: "Animated Websites", href: "/services"          },
+    { name: "Custom Software",   href: "/services"          },
+    { name: "Automations",       href: "/automations"       },
+    { name: "AI Receptionist",   href: "/ai-receptionist"   },
+  ],
+  Company: [
+    { name: "About",   href: "/about"   },
+    { name: "Work",    href: "/work"    },
+    { name: "Contact", href: "/contact" },
+  ],
+  Portfolio: [
+    { name: "A&T Solutions", href: "https://a-and-t-solutions.vercel.app/"              },
+    { name: "Hire Karo",     href: "https://frontend-for-hire-karo.vercel.app/"         },
+    { name: "iPhone 17 Pro", href: "https://iphone-17-pro-landing-page-ibku.vercel.app/" },
+    { name: "Joji Studio",   href: "https://jojistudio.vercel.app/"                     },
+  ],
+};
+
+const socialLinks = [
+  { name: "WhatsApp", href: "https://wa.me/923167233860" },
+  { name: "LinkedIn", href: "#"                          },
+  { name: "Instagram", href: "#"                         },
+];
 
 function AnimatedWaveCanvas() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -78,13 +106,58 @@ export function FooterSection() {
       <div className="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-12">
         {/* Main Footer */}
         <div className="py-16 lg:py-20">
-          <a href="/" className="inline-flex items-center gap-2 mb-6">
-            <span className="text-2xl font-display text-white">VYNX</span>
-            <span className="text-xs text-white/40 font-mono">®</span>
-          </a>
-          <p className="text-white/50 leading-relaxed max-w-sm text-sm">
-            Digital agency for ambitious brands. Websites, animated experiences, custom software, automations & AI solutions.
-          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8 md:gap-6 lg:gap-8">
+            {/* Brand Column */}
+            <div className="col-span-1 sm:col-span-2">
+              <a href="/" className="inline-flex items-center gap-2 mb-6">
+                <span className="text-2xl font-display text-white">VYNX</span>
+                <span className="text-xs text-white/40 font-mono">®</span>
+              </a>
+
+              <p className="text-white/50 leading-relaxed mb-8 max-w-xs text-sm">
+                Digital agency for ambitious brands. Websites, animated experiences, custom software, automations & AI solutions.
+              </p>
+
+              {/* Social Links */}
+              <div className="flex gap-6">
+                {socialLinks.map((link) => (
+                  <a
+                    key={link.name}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-white/60 hover:text-white transition-colors flex items-center gap-1 group"
+                  >
+                    {link.name}
+                    <ArrowUpRight className="w-3 h-3 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            {/* Link Columns */}
+            {Object.entries(footerLinks).map(([title, links]) => (
+              <div key={title}>
+                <h3 className="text-sm font-medium text-white mb-6">{title}</h3>
+                <ul className="space-y-4">
+                  {links.map((link) => (
+                    <li key={link.name}>
+                      <a
+                        href={link.href}
+                        {...(link.href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                        className="text-sm text-white/60 hover:text-white transition-colors inline-flex items-center gap-1.5 group"
+                      >
+                        {link.name}
+                        {link.href.startsWith("http") && (
+                          <ArrowUpRight className="w-3 h-3 opacity-0 -translate-x-0.5 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
+                        )}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Bottom Bar */}
